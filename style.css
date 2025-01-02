@@ -1,39 +1,44 @@
-/* Add shared styles for all pages here */
+/* Typography */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif; /* Sans-serif font for body text */
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
-header, footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; /* Elegant serif font for headings */
+  color: #2c3e50;
+  margin-bottom: 0.5em;
 }
-header h1, footer p {
-    color: #a67c00;
+
+p {
+  margin-bottom: 1em;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+
+/* Modern Layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Add space between grid items */
+  padding: 20px; /* Add padding around the grid */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid on the page */
 }
-nav ul li {
-    margin: 0 15px;
+
+/* Grid Items */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-.banner {
-    height: 400px;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.products .product-item {
-    text-align: center;
-    margin: 20px;
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
